@@ -1,4 +1,4 @@
-name: databricks deployment CI/CD process
+name: databricks deployment CI/CD 
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     env:
       DATABRICKS_HOST: ${{secrets.DATABRICKS_URL}}
       DATABRICKS_TOKEN: ${{secrets.DATABRICKS_TOEKEN}}
-      REPO_PATH: /Workspace/Users/tamraj.dhvaj@zohomail.in/databricks_course
+      REPO_PATH: ${{secrets.DB_FOLDER_PATH}}
 
     steps:
       - name: Checkout Repos
