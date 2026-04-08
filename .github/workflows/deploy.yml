@@ -11,7 +11,7 @@ jobs:
     env:
       DATABRICKS_HOST: ${{secrets.DATABRICKS_URL}}
       DATABRICKS_TOKEN: ${{secrets.DATABRICKS_TOEKEN}}
-      REPO_PATH: ${{secrets.DB_FOLDER_PATH}}
+      REPO_PATH: /Workspace/Users/tamraj.dhvaj@zohomail.in/databricks_course
 
     steps:
       - name: Checkout Repos
