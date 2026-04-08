@@ -10,7 +10,7 @@ jobs:
     environment: development
     env:
       DATABRICKS_HOST: ${{secrets.DATABRICKS_URL}}
-      DATABRICKS_TOKEN: ${{secrets.DATABRICKS_TOEKEN}}
+      DATABRICKS_TOKEN: ${{secrets.DATABRICKS_TOKEN}}
       REPO_PATH: ${{secrets.DB_FOLDER_PATH}}
 
     steps:
